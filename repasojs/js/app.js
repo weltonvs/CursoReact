@@ -33,3 +33,38 @@ if(musica2){
     console.log(musica2);
 }
 console.log(musica2);
+
+/**
+ * Templates en javaScript
+ */
+const nombre = 'Welton';
+const trabajo = 'Desarrollador Web';
+
+//Forma antigua de concatenar strings.
+console.log('Nombre: ' + nombre + ', Trabajo: ' + trabajo);
+
+//Nueva forma de concatenar strings.
+// Nota: hay que utilizar ese simbolo ` - ese otro provoca error '.
+console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
+
+//Concatenar con multiples lineas.
+//const contenedorApp = document.querySelector('#app');
+//    let html = '<ul>' +
+//                    '<li> Nombre: ' + nombre + '</li>' +
+//                    '<li> Trabajo: ' + trabajo + '</li>' +
+//                '</ul>';
+
+//contenedorApp.innerHTML = html;
+
+//Utilizando el template.
+
+const contenedorApp2 = document.querySelector('#app');
+
+let html2 = `
+    <ul>
+        <li>Nombre: ${nombre} </li>
+        <li>Trabajo: ${trabajo} </li>
+    </ul>    
+`;
+
+contenedorApp2.innerHTML = html2;
