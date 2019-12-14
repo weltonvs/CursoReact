@@ -95,4 +95,34 @@ const metallica_nuevo = {banda, genero, canciones};
 console.log(metallica_nuevo);
 
 
+/**
+ * Funciones en un Objeto
+ */
 
+ //Métodos o funciones en un objeto.
+ // Version muy utilizada entes de ES6
+ const Persona = {
+   nombre: 'Juan',
+   trabajo: 'Desarrollador Web',
+   edad: 500,
+   musicaRock: true,
+   mostrarInformacion: function() {
+     console.log(`${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
+   }
+ }
+
+ Persona.mostrarInformacion();
+ //Métodos o funciones en un objeto.
+ //Método nuevo - utilizado en ES6
+ const Persona_ES6 = {
+   nombre: 'Juan',
+   trabajo: 'Desarrollador Web',
+   edad: 500,
+   musicaRock: true,
+   mostrarInformacion(){
+     console.log(`${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
+   }
+ }
+
+ Persona_ES6.mostrarInformacion();
+ 
