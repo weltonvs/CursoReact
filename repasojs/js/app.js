@@ -68,3 +68,86 @@ let html2 = `
 `;
 
 contenedorApp2.innerHTML = html2;
+
+
+/**
+ * Trabajando con Funciones
+ */
+//Creando una función clasica en JavaScript
+//Fuction Declaration
+//Ese tipo de función se puede crear al inicio o al final
+// del código.
+function saludar(nombre){
+
+    console.log('Bienvenido ' + nombre);
+
+}
+
+console.log(saludar('Welton'));
+console.log(saludar('Aaliyah'));
+
+//Function Expression
+//Ese tipo de función siempre se crea primero y 
+//despues se puede llamarla.
+const cliente = function(nombre){
+    console.log('Bienvenido ' + nombre);
+}
+
+cliente('Welton');
+
+/**
+ * Funciones
+ * Parámetros por default
+ */
+function actividad(nombre, actividad){
+
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);
+    
+}
+
+actividad('Juan','Aprender JavaScript');
+actividad();//Aqui la función funcionará, pero al no pasar parámetros se implime underfild
+
+//Para soluciona ese problema, utilize parámetros por default
+function actividad(nombre = 'Sin nombre', actividad = 'Sin actividad'){
+
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);
+    
+}
+
+actividad();
+//Haciendo lo mismo con fuction Expression
+const actividad_2 = function(nombre = 'Sin nombre', actividad = 'sin actividad'){
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);   
+}
+
+actividad_2();
+
+/**
+ * Arrow Functions
+ */
+
+ //Utilizando fuction expression
+ let viajando = function(destino){
+    return `Viajando a la ciudad de: ${destino}`;
+ }
+
+ let viaje;
+ viaje = viajando('Pariz');
+ console.log(viaje);
+ //Pasando la función anterior a Arrow Fuctions con un argumento
+ let viajando_Arrow_Fuctions = destino => {
+     return `Viajando a la ciudad de: ${destino}`;
+ }
+ let viaje2;
+ viaje2 = viajando_Arrow_Fuctions('Brasil');
+ console.log(viaje2);
+
+ //Pasando la función anterior a Arrow Fuctions con mas de un argumento
+ let viajando_Arrow_Fuctions2 = (destino, por) => {
+     return `Viajando a la ciudad de: ${destino} por ${por}`;
+ }
+ let viaje3;
+ viaje3 = viajando_Arrow_Fuctions2('Brasil','España');
+ console.log(viaje3);
+ //Con más de un parametro hay que poner dentro de parentesis.
