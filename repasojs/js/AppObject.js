@@ -160,6 +160,18 @@ const Persona3 = {
 };
 console.log(Object.keys(Persona3));
 
+/**
+ * Spreed operator
+ */
+
+ //Forma antigua de unir dos vectores.
+let lenguajes = ['JavaScript','PHP','Python'];
+let Frameworks = ['ReactJS','Laravel','Django'];
+
+let combinacion = lenguajes.concat(Frameworks); //Uniendo los dos vectores, lenguajes con Frameworks
+console.log(combinacion);
+
+
 
 
  
