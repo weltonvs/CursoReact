@@ -25,4 +25,20 @@
  //Imprimiendo en consola el objeto tarea1.
  console.log(tarea1);
 
+ /**
+  * Utilizando el Prototype
+  */
+
+//Creando una clase
+function Empleado(nombre,direccion){
+    this.nombre = nombre;
+    this.direccion = direccion;
+}
+Empleado.prototype.mostrarInformacion = function(){
+    return `Nombre: ${this.nombre}\nDirección: ${this.direccion}`;
+}
+
+let objeto_Empleado = new Empleado('Welton', 'Calle Juarez');
+console.log(objeto_Empleado);
+console.log(objeto_Empleado.mostrarInformacion());
  
