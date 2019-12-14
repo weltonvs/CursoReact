@@ -59,3 +59,17 @@ const aprendiendoJS = {
 console.log(aprendiendoJS); //Forma actual de acceder al objecto
 console.log(aprendiendoJS.version.nueva);//Forma antigua de acceder al objeto
 console.log(aprendiendoJS.frameworks[1]);
+
+//Forma Nueva de hacer Object Destructuring
+let {version, frameworks} = aprendiendoJS;
+console.log(version);//Accediendo al objecto completo
+console.log(frameworks);//Accediendo al objecto completo
+
+let {anterior} = aprendiendoJS.version;//Accediendo el contenido de la variable version
+console.log(anterior);
+
+let {nueva} = aprendiendoJS.version;//Accediendo el contenido de la variable version
+console.log(nueva);
+
+//Nota: Una vez que accede a la variable de interes, solo tiene que llamar 
+// por el nombre la variable interna que interesa.
