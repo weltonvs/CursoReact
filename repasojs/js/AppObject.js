@@ -152,5 +152,14 @@ carrito.map(Producto => {
   return 'El produto es ' + Producto;
 });
 
+// Utilizando Object.keys
+const Persona3 = {
+  nombre: 'Juan',
+  profesion: 'Desarrollador Web',
+  edad: 500
+};
+console.log(Object.keys(Persona3));
+
+
 
  
