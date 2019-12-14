@@ -27,6 +27,7 @@
 
  /**
   * Utilizando el Prototype
+  * Son como los métodos de clase en Java.
   */
 
 //Creando una clase
@@ -34,6 +35,7 @@ function Empleado(nombre,direccion){
     this.nombre = nombre;
     this.direccion = direccion;
 }
+//Aplicando un método al objeto Empleado
 Empleado.prototype.mostrarInformacion = function(){
     return `Nombre: ${this.nombre}\nDirección: ${this.direccion}`;
 }
@@ -41,4 +43,8 @@ Empleado.prototype.mostrarInformacion = function(){
 let objeto_Empleado = new Empleado('Welton', 'Calle Juarez');
 console.log(objeto_Empleado);
 console.log(objeto_Empleado.mostrarInformacion());
+
+/**
+ * object Destructuring 
+ */
  
