@@ -147,6 +147,10 @@ console.log(metallica_nuevo);
   // Ejecutar en la página web la variable html.
   contenedor.innerHTML = html;
 
+// Utilizando Map
+carrito.map(Producto => {
+  return 'El produto es ' + Producto;
+});
 
 
  
