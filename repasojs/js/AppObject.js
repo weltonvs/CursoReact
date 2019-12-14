@@ -125,4 +125,28 @@ console.log(metallica_nuevo);
  }
 
  Persona_ES6.mostrarInformacion();
+
+ /**
+  * Arreglos, Map y Objects.keys
+  */
+
+  // Arreglos y .map
+  const carrito = ['Producto 1','Producto 2','Producto 3']; //Ejemplo de un arreglo
+  console.log(carrito);//Imprime en consola el arreglo.
+  //Para acceder elemento por elemento
+  carrito.forEach(producto => {
+    console.log(producto);//Imprime cada elemento del array carrito linea por linea.
+  })
+  //Imprimiendo en página WEB.
+  const contenedor = document.querySelector('#app');
+
+  let html = '';
+  carrito.forEach(Producto => {
+    html += `<li>${Producto}</li>`;
+  })
+  // Ejecutar en la página web la variable html.
+  contenedor.innerHTML = html;
+
+
+
  
