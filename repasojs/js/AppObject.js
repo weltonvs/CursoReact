@@ -171,6 +171,13 @@ let Frameworks = ['ReactJS','Laravel','Django'];
 let combinacion = lenguajes.concat(Frameworks); //Uniendo los dos vectores, lenguajes con Frameworks
 console.log(combinacion);
 
+//Forma nueva de unir dos vectores.
+let lenguajes2 = ['JavaScript','PHP','Python'];
+let Frameworks2 = ['ReactJS','Laravel','Django'];
+
+let combinacion2 = [...lenguajes2,...Frameworks2] //Uniendo los dos vectores, lenguajes2 con Frameworks2
+console.log(combinacion2);
+//los tres puntos ... es conocido como Spreed Operator.
 
 
 
