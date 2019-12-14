@@ -73,3 +73,7 @@ console.log(nueva);
 
 //Nota: Una vez que accede a la variable de interes, solo tiene que llamar 
 // por el nombre la variable interna que interesa.
+
+/**
+ * Object Literal Enhacement
+ */
