@@ -77,3 +77,22 @@ console.log(nueva);
 /**
  * Object Literal Enhacement
  */
+const banda = 'Metallica';
+const genero = 'Heavy Metal';
+const canciones = ['Master Of Puppets', 'Seek & Destroy', 'Enter Sandman'];
+
+// Forma antigua de asignar Object Literal Enhacement
+const metallica = {
+  banda : banda,
+  genero: genero,
+  canciones: canciones
+}
+
+console.log(metallica);
+
+// Forma nueva de asignar Object Literal Enhacement
+const metallica_nuevo = {banda, genero, canciones};
+console.log(metallica_nuevo);
+
+
+
