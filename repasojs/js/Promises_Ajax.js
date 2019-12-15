@@ -27,10 +27,35 @@ const descargaUsuarios = cantidad => new Promise((resolve, reject) => {
 });
 
 console.log(descargaUsuarios(5));
-descargaUsuarios(5)
-    .then(
-        miembros => console.log(miembros),
-        error => console.error(
-            new Error('Hubo un error ' + error)
-        )
+descargaUsuarios(5).then(
+    miembros => console.log(miembros),
+    error => console.error(
+        new Error('Hubo un error ' + error)
     )
+)
+
+//Imprimir en la página html.
+descargaUsuarios(5).then(
+    miembros => imprimirHTML(miembros),
+    error => console.error(
+        new Error('Hubo un error ' + error)
+    )
+)
+
+function imprimirHTML(usuarios) {
+    let html = '';  
+    usuarios.forEach(usuario => {
+        html += `
+            <li>
+                Nombre: ${usuario.name.first} ${usuario.name.last}
+                Pais: ${usuario.nat}
+                Imagen: 
+                    <img src="${usuario.picture.medium}">
+            </li>    
+        `;
+    });
+
+    const contenedorApp = document.querySelector('#app');
+    contenedorApp.innerHTML = html;
+}
+
