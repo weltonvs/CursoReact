@@ -5,9 +5,21 @@
 // Clases en JavaScript
 class Tarea{
 
+    /**
+     * Constructor de la clase Tarea
+     * @param {*} nombre 
+     * @param {*} priodidad 
+     */
     constructor(nombre, priodidad){
         this.nombre = nombre;
         this.priodidad = priodidad;
+    }
+
+    /**
+     * Método mostrar contenido de los atributos.
+     */
+    mostrar(){
+        return(`La tarea ${this.nombre} tiene una priodidad ${this.priodidad}.`);
     }
 
 }
@@ -16,6 +28,6 @@ class Tarea{
 let objeto1 = new Tarea("Estudiar","Alta");
 let objeto2 = new Tarea("Comprar Coche Nuevo","Alta");
 let objeto3 = new Tarea("Ver series y peliculas","Baja");
-console.log(objeto1);
-console.log(objeto2);
-console.log(objeto3);
+console.log(objeto1.mostrar());
+console.log(objeto2.mostrar());
+console.log(objeto3.mostrar());
